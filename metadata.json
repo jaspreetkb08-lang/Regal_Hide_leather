@@ -1,0 +1,7 @@
+{
+  "name": " Regal Hide - Luxury Leather Goods",
+  "description": "A premium, royal-themed e-commerce experience for high-end leather watches, belts, shoes, and bags.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

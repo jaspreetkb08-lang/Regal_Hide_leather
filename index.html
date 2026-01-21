@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regal Hide | Minimalist Heritage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              palace: {
+                ivory: '#FDFCF0', // Marble Ivory
+                gold: '#B8860B',  // Burnished Gold
+                leather: '#5D4037', // Saddle Brown
+                charcoal: '#2D2926', // Deep Text
+                border: '#E5E1D1',
+              }
+            },
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', 'serif'],
+              display: ['"Cinzel"', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #FDFCF0;
+        color: #2D2926;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+      .font-display { font-family: 'Cinzel', serif; }
+      .font-serif { font-family: 'Cormorant Garamond', serif; }
+
+      /* Minimal Scrollbar */
+      ::-webkit-scrollbar { width: 4px; }
+      ::-webkit-scrollbar-track { background: #FDFCF0; }
+      ::-webkit-scrollbar-thumb { background: #B8860B; }
+
+      .btn-minimal-gold {
+        border: 1px solid #B8860B;
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+      .btn-minimal-gold:hover {
+        background-color: #B8860B;
+        color: #FDFCF0;
+      }
+
+      .royal-card {
+        background: #FFFFFF;
+        border: 1px solid #E5E1D1;
+        transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.6s ease;
+      }
+      .royal-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+      }
+
+      @keyframes slide-up {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-royal-up { animation: slide-up 1s ease-out forwards; }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "@google/genai": "https://esm.sh/@google/genai@^1.37.0",
+        "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
